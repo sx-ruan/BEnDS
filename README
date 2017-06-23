@@ -8,7 +8,8 @@ usage: BEnDS.py [-h] [-d MEAN S.D.] [-p POTENTIAL] [-n NOISE] [-l LENGTH]
 optional arguments:
   -h, --help            show this help message and exit
   -d MEAN S.D., --distribution MEAN S.D.
-                        mean and standard deviation of the energy distribution (optional, default: [2.5, 1.0])
+                        mean and standard deviation of the energy distribution 
+                        (optional, default: [2.5, 1.0])
   -p POTENTIAL, --potential POTENTIAL
                         chemical potential of the protein (optional, default: -3)
   -n NOISE, --noise NOISE
