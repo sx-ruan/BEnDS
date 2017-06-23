@@ -24,15 +24,20 @@ optional arguments:
 
 
 BEnDS outputs three tab-delimited text files:
-results_wgt=1_lim=0.txt: binding models are estimated using all the binding sites, weighted.
+results_wgt=1_lim=0.txt
+  Binding models are estimated using all the binding sites, weighted.
   The 4 columns in the file are:
   probabilistic model all sequence rank r^2, probabilistic model top 1% sequence rank r^2,
   biophysical model all sequence rank r^2, biophysical model top 1% sequence rank r^2.
-results_wgt=1_lim=1.txt: binding models are estimated using the top 1% binding sites, weighted.
+
+results_wgt=1_lim=1.txt
+  Binding models are estimated using the top 1% binding sites, weighted.
   The 4 columns in the file are:
   probabilistic model all sequence rank r^2, probabilistic model top 1% sequence rank r^2,
   biophysical model all sequence rank r^2, biophysical model top 1% sequence rank r^2.
-results_wgt=0_lim=1.txt: binding models are estimated using the top 1% binding sites, unweighted.
+
+results_wgt=0_lim=1.txt
+  Binding models are estimated using the top 1% binding sites, unweighted.
   The 2 columns in the file are:
   probabilistic model all sequence rank r^2, probabilistic model top 1% sequence rank r^2.
 
