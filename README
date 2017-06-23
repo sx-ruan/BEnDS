@@ -1,6 +1,6 @@
 Binding Energy Distribution Simulations (BEnDS)
 
-BEnDS can generate random binding energy matrices and simulate binding probabilities of DNA sequecnes. It requires Python 2.7 and the following Python packages:
+BEnDS can generate random binding energy matrices and simulate binding probabilities of DNA sequences. It requires Python 2.7 and the following Python packages:
 numpy, scipy, matplotlib, requests.
 
 To execute the BEnDS program, please follow the instructions below.
