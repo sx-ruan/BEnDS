@@ -1,0 +1,43 @@
+Binding Energy Distribution Simulator (BEnDS)
+
+To execute the BEnDS program, please follow the instructions below.
+
+usage: BEnDS.py [-h] [-d MEAN S.D.] [-p POTENTIAL] [-n NOISE] [-l LENGTH]
+               [-s SAMPLE] [-o OUTPUT] [-v]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d MEAN S.D., --distribution MEAN S.D.
+                        mean and standard deviation of the energy distribution (optional, default: [2.5, 1.0])
+  -p POTENTIAL, --potential POTENTIAL
+                        chemical potential of the protein (optional, default: -3)
+  -n NOISE, --noise NOISE
+                        standard deviation of noise in kT (optional, default: 0)
+  -l LENGTH, --length LENGTH
+                        motif length (optional, default: 8)
+  -s SAMPLE, --sample SAMPLE
+                        number of random samples (optional, default: 1)
+  -o OUTPUT, --output OUTPUT
+                        output directory (optional, default: current working directory)
+  -v, --version         show program's version number and exit
+
+
+BEnDS outputs three tab-delimited text files:
+results_wgt=1_lim=0.txt: binding models are estimated using all the binding sites, weighted.
+  The 4 columns in the file are:
+  probabilistic model all sequence rank r^2, probabilistic model top 1% sequence rank r^2,
+  biophysical model all sequence rank r^2, biophysical model top 1% sequence rank r^2.
+results_wgt=1_lim=1.txt: binding models are estimated using the top 1% binding sites, weighted.
+  The 4 columns in the file are:
+  probabilistic model all sequence rank r^2, probabilistic model top 1% sequence rank r^2,
+  biophysical model all sequence rank r^2, biophysical model top 1% sequence rank r^2.
+results_wgt=0_lim=1.txt: binding models are estimated using the top 1% binding sites, unweighted.
+  The 2 columns in the file are:
+  probabilistic model all sequence rank r^2, probabilistic model top 1% sequence rank r^2.
+
+
+Author:
+Shuxiang Ruan (sruan@wustl.edu), Washington University in St. Louis
+
+Reference:
+Ruan S, Stormo GD. Inherent limitations of probabilistic models for protein-DNA binding specificity. PLOS Computational Biology (2017)
