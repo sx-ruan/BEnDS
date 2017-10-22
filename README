@@ -5,14 +5,12 @@ numpy, scipy, matplotlib, requests.
 
 To execute the BEnDS program, please follow the instructions below.
 
-usage: BEnDS.py [-h] [-d MEAN S.D.] [-p POTENTIAL] [-n NOISE] [-l LENGTH]
-               [-s SAMPLE] [-o OUTPUT] [-v]
+usage: BEnDS.py [-h] [-d MEAN S.D.] [-p POTENTIAL] [-n NOISE] [-l LENGTH] [-s SAMPLE] [-o OUTPUT] [-v]
 
 optional arguments:
   -h, --help            show this help message and exit
   -d MEAN S.D., --distribution MEAN S.D.
-                        mean and standard deviation of the energy distribution 
-                        (optional, default: [2.5, 1.0])
+                        mean and standard deviation of the energy distribution (optional, default: [2.5, 1.0])
   -p POTENTIAL, --potential POTENTIAL
                         chemical potential of the protein (optional, default: -3)
   -n NOISE, --noise NOISE
